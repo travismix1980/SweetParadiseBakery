@@ -1,0 +1,20 @@
+﻿@model SweetParadiseBakery.Models.Bakery
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@Model.Name</title>
+</head>
+<body>
+    <h2>Bakery Information</h2>
+    <p>Bakery Name: @Model.Name</p>
+    <p>Address: @Model.Address</p>
+    <p>Founding Date @Model.FoundingDate.ToShortDateString()</p>
+    <p>Bakery Value: $@Model.BakeryValue</p>
+</body>
+</html>
